@@ -14,8 +14,7 @@ RUN apt-get update && apt-get install -y \
             python3-pip \
             python3-setuptools \
             nodejs && pip3 install --upgrade pip && \
-	    pip3 install --upgrade kubeflow-kale && \
-	    jupyter labextension install kubeflow-kale-labextension
+	    pip3 install --upgrade kubeflow-kale
             
 #RUN pip install $PIP_PACKAGES_COMMON --upgrade
 #RUN pip install $PIP_PACKAGES_KALE --upgrade
