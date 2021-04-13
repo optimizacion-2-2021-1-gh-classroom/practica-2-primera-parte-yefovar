@@ -1,7 +1,7 @@
 FROM ubuntu:bionic
 ENV JUPYTERLAB_VERSION 1.1.0
 ENV USER_BINDER jovyan
-ENV PIP_PACKAGES_KALE="kubeflow-kale==0.6.1"
+#ENV PIP_PACKAGES_KALE="kubeflow-kale==0.6.1"
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && echo "America/Mexico_City" > /etc/timezone && apt-get install -y tzdata
 
 RUN apt-get update && apt-get install -y \
@@ -13,11 +13,13 @@ RUN apt-get update && apt-get install -y \
             python3-dev \
             python3-pip \
             python3-setuptools \
-            nodejs && pip3 install --upgrade pip
+            nodejs && pip3 install --upgrade pip && \
+	    pip3 install --upgrade kubeflow-kale && \
+	    jupyter labextension install kubeflow-kale-labextension
             
 #RUN pip install $PIP_PACKAGES_COMMON --upgrade
-RUN pip install $PIP_PACKAGES_KALE --upgrade
-RUN jupyter labextension install kubeflow-kale-labextension
+#RUN pip install $PIP_PACKAGES_KALE --upgrade
+#RUN jupyter labextension install kubeflow-kale-labextension
 
 #Clona el repositorio
 RUN git clone https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-yefovar.git 
