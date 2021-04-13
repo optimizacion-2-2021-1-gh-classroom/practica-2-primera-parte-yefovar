@@ -3,7 +3,7 @@ ENV JUPYTERLAB_VERSION 1.1.0
 ENV USER_BINDER jovyan
 ENV PIP_PACKAGES_KALE="kubeflow-kale==0.6.1"
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && echo "America/Mexico_City" > /etc/timezone && apt-get install -y tzdata
-
+#HOLA
 RUN apt-get update && apt-get install -y \
 	    build-essential \
             sudo \
