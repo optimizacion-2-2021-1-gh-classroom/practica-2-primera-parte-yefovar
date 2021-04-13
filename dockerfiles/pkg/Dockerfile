@@ -21,7 +21,7 @@ RUN git clone https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-s
 #Instala paquetes necesario
 RUN pip install practica-1-segunda-parte-yefovar/src/
 COPY requirements.txt .
-RUN pip3 install -r requirements.txt            
+RUN pip install -r requirements.txt            
 
 RUN groupadd ${USER_BINDER}
 RUN useradd ${USER_BINDER} -g ${USER_BINDER} -m -s /bin/bash
