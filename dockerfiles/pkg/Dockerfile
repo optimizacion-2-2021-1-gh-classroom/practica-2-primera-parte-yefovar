@@ -21,9 +21,6 @@ RUN git clone https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-s
 #Instala paquetes necesario
 RUN pip install practica-1-segunda-parte-yefovar/src/  
 
-RUN pip install $PIP_PACKAGES_KALE --upgrade
-RUN jupyter labextension install kubeflow-kale-labextension
-
 RUN groupadd ${USER_BINDER}
 RUN useradd ${USER_BINDER} -g ${USER_BINDER} -m -s /bin/bash
 RUN echo 'jovyan ALL=(ALL:ALL) NOPASSWD:ALL' | (EDITOR='tee -a' visudo)
@@ -34,6 +31,9 @@ USER ${USER_BINDER}
 RUN jupyter notebook --generate-config && sed -i "s/#c.NotebookApp.password = .*/c.NotebookApp.password = u'sha1:115e429a919f:21911277af52f3e7a8b59380804140d9ef3e2380'/" /home/jovyan/.jupyter/jupyter_notebook_config.py
 ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
+
+RUN pip install $PIP_PACKAGES_KALE --upgrade
+RUN jupyter labextension install kubeflow-kale-labextension
 
 VOLUME ["/shared_volume"]
 
