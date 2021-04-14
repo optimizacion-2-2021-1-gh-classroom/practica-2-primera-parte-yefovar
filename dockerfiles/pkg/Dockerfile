@@ -12,10 +12,9 @@ RUN apt-get update && apt-get install -y \
             git \
             python3-dev \
             python3-pip \
-            python3-setuptools \
-            nodejs && pip3 install --upgrade pip
+            python3-setuptools && pip3 install --upgrade pip
             
-
+RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && apt-get install -y nodejs
 #Clona el repositorio
 RUN git clone https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-yefovar.git 
 #Instala paquetes necesario
