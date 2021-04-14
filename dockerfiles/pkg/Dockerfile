@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 ENV JUPYTERLAB_VERSION 1.1.0
 ENV USER_BINDER jovyan
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && echo "America/Mexico_City" > /etc/timezone && apt-get install -y tzdata
-
+#dummy line
 RUN apt-get update && apt-get install -y \
 	    build-essential \
             sudo \
