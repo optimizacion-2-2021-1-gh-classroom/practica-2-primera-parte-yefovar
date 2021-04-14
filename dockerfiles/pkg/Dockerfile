@@ -14,11 +14,10 @@ RUN apt-get update && apt-get install -y \
             python3-pip \
             python3-setuptools \
             nodejs && pip3 install --upgrade pip && \
-	    pip3 install --upgrade kubeflow-kale
+	    pip3 install --upgrade 
             
-#RUN pip install $PIP_PACKAGES_COMMON --upgrade
-#RUN pip install $PIP_PACKAGES_KALE --upgrade
-#RUN jupyter labextension install kubeflow-kale-labextension
+RUN pip install kubeflow-kale --upgrade
+RUN jupyter labextension install kubeflow-kale-labextension
 
 #Clona el repositorio
 RUN git clone https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-yefovar.git 
