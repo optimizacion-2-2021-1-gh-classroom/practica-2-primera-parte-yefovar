@@ -29,6 +29,9 @@ RUN apt-get update && apt-get install -y $DEB_BUILD_DEPS $DEB_PACKAGES && pip3 i
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && apt-get install -y nodejs
 
+RUN echo 'jovyan ALL=(ALL:ALL) NOPASSWD:ALL' | (EDITOR='tee -a' visudo)
+RUN echo 'jovyan:qwerty' | chpasswd
+
 RUN pip3 install jupyter "jupyterlab>=2.0.0,<3.0.0" --upgrade
 
 #next password is dummy
@@ -47,8 +50,7 @@ RUN pip install practica-1-segunda-parte-yefovar/src/
 
 RUN groupadd ${USER_BINDER}
 RUN useradd ${USER_BINDER} -g ${USER_BINDER} -m -s /bin/bash
-RUN echo 'jovyan ALL=(ALL:ALL) NOPASSWD:ALL' | (EDITOR='tee -a' visudo)
-RUN echo 'jovyan:qwerty' | chpasswd
+
 #RUN pip3 install jupyter jupyterlab==$JUPYTERLAB_VERSION --upgrade
 #RUN pip3 install jupyter "jupyterlab>=2.0.0,<3.0.0" --upgrade
 RUN chown -R ${USER_BINDER}:${USER_BINDER} /home/jovyan/   #da permisos al usuario
