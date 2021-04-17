@@ -47,8 +47,8 @@ RUN pip install practica-1-segunda-parte-yefovar/src/
 
 RUN groupadd ${USER_BINDER}
 RUN useradd ${USER_BINDER} -g ${USER_BINDER} -m -s /bin/bash
-RUN echo 'jovyan ALL=(ALL:ALL) NOPASSWD:ALL' | (EDITOR='tee -a' visudo)
-RUN echo 'jovyan:qwerty' | chpasswd
+#RUN echo 'jovyan ALL=(ALL:ALL) NOPASSWD:ALL' | (EDITOR='tee -a' visudo)
+#RUN echo 'jovyan:qwerty' | chpasswd
 #RUN pip3 install jupyter jupyterlab==$JUPYTERLAB_VERSION --upgrade
 #RUN pip3 install jupyter "jupyterlab>=2.0.0,<3.0.0" --upgrade
 RUN chown -R ${USER_BINDER}:${USER_BINDER} /home/jovyan/   #da permisos al usuario
