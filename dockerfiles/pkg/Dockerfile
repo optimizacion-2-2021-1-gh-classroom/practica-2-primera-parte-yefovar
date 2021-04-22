@@ -43,10 +43,10 @@ RUN pip install $PIP_PACKAGES_KALE --upgrade
 RUN jupyter labextension install kubeflow-kale-labextension
 
 #Clona el repositorio
-RUN git clone https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-yefovar.git 
+#RUN git clone https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-yefovar.git 
 #Instala paquetes necesario
-RUN pip install practica-1-segunda-parte-yefovar/src/  
-
+#RUN pip install practica-1-segunda-parte-yefovar/src/  
+RUN pip install --quiet "git+https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-yefovar.git#egg=opt&subdirectory=src"
 #RUN groupadd ${USER_BINDER}
 #RUN useradd ${USER_BINDER} -g ${USER_BINDER} -m -s /bin/bash
 
