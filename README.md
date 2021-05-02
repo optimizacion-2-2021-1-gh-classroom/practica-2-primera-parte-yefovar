@@ -36,4 +36,7 @@ Para consultar ejemplos de implementaciones usa el boton de binder y el notebook
 ### Actualizacion y mejoras del paquete
 Todas las actualizaciones y mejoras al código se realizaron en el repositorio [anterior.](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-yefovar) `optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-yefovar`
 
+### Historial de lanzamientos de kale
+Para revisar la documentación de los lanzamientos se puede accesar al siguiente [reporte.](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-2-primera-parte-yefovar/blob/main/lanzamientos_pipeline/Lanzamientos.ipynb) 
+
 
