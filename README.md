@@ -39,4 +39,14 @@ Todas las actualizaciones y mejoras al código se realizaron en el repositorio [
 ### Historial de lanzamientos de kale
 Para revisar la documentación de los lanzamientos se puede accesar al siguiente [reporte.](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-2-primera-parte-yefovar/blob/main/lanzamientos_pipeline/Lanzamientos.ipynb) 
 
-
+Se realizaron cinco lanzamientos, los cuales corresponden a lo siguiente:
+1. Prueba Kale
+<img src="lanzamientos_pipeline/Images/Testing Kale 1 - Success.jpeg">
+2. Debugg algorithm
+<img src="lanzamientos_pipeline/Images/pipeline_success_2.png">
+3. Mejoras al paquete
+<img src="lanzamientos_pipeline/Images/success_lanch_3.png">
+4. Solución Unbounded
+<img src="lanzamientos_pipeline/Images/launch_4_success.png">
+5. Pipeline Práctica 1 LA Bike Share
+<img src="lanzamientos_pipeline/Images/launch_5 - success 2.jpeg">
