@@ -26,6 +26,8 @@ con:
 
 ![equation](https://latex.codecogs.com/gif.latex?b\quad\epsilon\quad\mathbb{R}^{m})
 
+Usamos sphynx para documentar nuestro [paquete.](https://optimizacion-2-2021-1-gh-classroom.github.io/practica-1-segunda-parte-yefovar/Simplex.html#module-Simplexs)
+
 Todas las actualizaciones y mejoras al código se encuentran el repo [anterior.](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-yefovar)
 
 
