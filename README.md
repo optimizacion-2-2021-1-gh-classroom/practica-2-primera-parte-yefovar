@@ -7,7 +7,25 @@
 | yefovar   | Programación  | Yedam          | Revisión del paquete|
 | mfrubio   | Project Manager        | Fernanda    | Montar servicios|
 
+## Paquete Simplex
+Implementamos un paquete en Python que resuelve problemas de maximización de una función objetivo lineal con restricciones:
 
-Probamos nuestro paquete con kale, la documentación se encuentra [aquí.](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-2-primera-parte-yefovar/blob/main/lanzamientos_pipeline/Lanzamientos.ipynb)
+![equation](https://latex.codecogs.com/gif.latex?max_{x}\quad&space;c^{T}x) 
+
+sujeto a:
+
+![equation](https://latex.codecogs.com/gif.latex?Ax\leq&space;b)
+
+![equation](https://latex.codecogs.com/gif.latex?x\geq&space;0) 
+
+con:
+
+![equation](https://latex.codecogs.com/gif.latex?c,x\quad\epsilon\quad\mathbb{R}^{n})
+
+![equation](https://latex.codecogs.com/gif.latex?A\quad\epsilon\quad\mathbb{R}^{m\times&space;n})
+
+![equation](https://latex.codecogs.com/gif.latex?b\quad\epsilon\quad\mathbb{R}^{m})
 
 Todas las actualizaciones y mejoras al código se encuentran el repo [anterior.](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-yefovar)
+
+
